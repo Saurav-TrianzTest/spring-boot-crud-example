@@ -1,0 +1,1 @@
+Complete build-push.sh script with interactive registry selection, tag sanitization, ECR repository auto-creation, and error handling

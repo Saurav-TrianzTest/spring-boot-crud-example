@@ -1,0 +1,1 @@
+Complete deploy-image.bat script with Windows-compatible ECS Fargate deployment logic

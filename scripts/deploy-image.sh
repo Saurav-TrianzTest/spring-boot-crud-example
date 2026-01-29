@@ -1,0 +1,1 @@
+Complete deploy-image.sh script with ECS Fargate deployment, ALB creation, target group setup, service creation/update, and health checks

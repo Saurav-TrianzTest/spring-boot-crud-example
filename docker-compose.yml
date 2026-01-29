@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  spring-boot-crud-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: spring-boot-crud-example:latest
+    container_name: spring-boot-crud-app
+    ports:
+      - "9191:9191"
+    environment:
+      # JVM Configuration
+      - JAVA_OPTS=-Xmx512m -Xms256m -XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0
+      
+      # Spring Boot Configuration
+      - SPRING_PROFILES_ACTIVE=docker
+      - PORT=9191
+      
+      # Database Configuration (connect to external MySQL)
+      - DB_HOST=${DB_HOST:-mysql-host}
+      - DB_PORT=${DB_PORT:-3306}
+      - DB_NAME=${DB_NAME:-javatechie}
+      - DB_USERNAME=${DB_USERNAME:-root}
+      - DB_PASSWORD=${DB_PASSWORD}
+      
+      # Timezone
+      - TZ=UTC
+    volumes:
+      - ./logs:/app/logs
+      - ./config:/app/config
+    networks:
+      - app-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:9191/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  logs:
+  config:

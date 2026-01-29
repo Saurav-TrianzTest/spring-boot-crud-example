@@ -1,0 +1,1 @@
+Complete build-push.bat script with Windows-compatible commands, delayed expansion, tag sanitization, and error handling

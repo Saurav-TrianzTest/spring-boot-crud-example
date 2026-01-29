@@ -1,0 +1,1 @@
+Comprehensive deployment guide for Spring Boot CRUD application on AWS ECS Fargate with detailed setup instructions, troubleshooting, and best practices
