@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+spring-boot-crud-example-2,com.javatechie.crud.example.service,ProductService,0,75,0,2,0,17,0,9,0,8
+spring-boot-crud-example-2,com.javatechie.crud.example,SpringBootCrudExample2Application,0,8,0,0,0,3,0,2,0,2
+spring-boot-crud-example-2,com.javatechie.crud.example.entity,Product,17,151,10,10,0,7,9,15,0,14
+spring-boot-crud-example-2,com.javatechie.crud.example.controller,ProductController,0,40,0,0,0,10,0,8,0,8

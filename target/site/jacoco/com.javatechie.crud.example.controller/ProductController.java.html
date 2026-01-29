@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ProductController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">spring-boot-crud-example-2</a> &gt; <a href="index.source.html" class="el_package">com.javatechie.crud.example.controller</a> &gt; <span class="el_source">ProductController.java</span></div><h1>ProductController.java</h1><pre class="source lang-java linenums">package com.javatechie.crud.example.controller;
+
+import com.javatechie.crud.example.entity.Product;
+import com.javatechie.crud.example.service.ProductService;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+public class ProductController {
+
+    private final ProductService service;
+
+<span class="fc" id="L14">    public ProductController(ProductService service) {</span>
+<span class="fc" id="L15">        this.service = service;</span>
+<span class="fc" id="L16">    }</span>
+
+    @PostMapping(&quot;/addProduct&quot;)
+    public Product addProduct(@RequestBody Product product) {
+<span class="fc" id="L20">        return service.saveProduct(product);</span>
+    }
+
+    @PostMapping(&quot;/addProducts&quot;)
+    public List&lt;Product&gt; addProducts(@RequestBody List&lt;Product&gt; products) {
+<span class="fc" id="L25">        return service.saveProducts(products);</span>
+    }
+
+    @GetMapping(&quot;/products&quot;)
+    public List&lt;Product&gt; findAllProducts() {
+<span class="fc" id="L30">        return service.getProducts();</span>
+    }
+
+    @GetMapping(&quot;/productById/{id}&quot;)
+    public Product findProductById(@PathVariable int id) {
+<span class="fc" id="L35">        return service.getProductById(id);</span>
+    }
+
+    @GetMapping(&quot;/product/{name}&quot;)
+    public Product findProductByName(@PathVariable String name) {
+<span class="fc" id="L40">        return service.getProductByName(name);</span>
+    }
+
+    @PutMapping(&quot;/update&quot;)
+    public Product updateProduct(@RequestBody Product product) {
+<span class="fc" id="L45">        return service.updateProduct(product);</span>
+    }
+
+    @DeleteMapping(&quot;/delete/{id}&quot;)
+    public String deleteProduct(@PathVariable int id) {
+<span class="fc" id="L50">        return service.deleteProduct(id);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

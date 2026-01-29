@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.javatechie.crud.example.repository.ProductRepositoryTest" time="1.435" tests="36" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/modernize-data/studio-data/TNT1001/APP3332/transformed-code/1048/studio-workspace/spring-boot-crud/target/test-classes:/modernize-data/studio-data/TNT1001/APP3332/transformed-code/1048/studio-workspace/spring-boot-crud/target/classes:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.0/spring-boot-starter-data-jpa-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.0/spring-boot-starter-aop-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/spring-aop/6.1.1/spring-aop-6.1.1.jar:/home/studioai/.m2/repository/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.0/spring-boot-starter-jdbc-3.2.0.jar:/home/studioai/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/studioai/.m2/repository/org/springframework/spring-jdbc/6.1.1/spring-jdbc-6.1.1.jar:/home/studioai/.m2/repository/org/hibernate/orm/hibernate-core/6.3.1.Final/hibernate-core-6.3.1.Final.jar:/home/studioai/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/studioai/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/studioai/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/studioai/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/studioai/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/home/studioai/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/home/studioai/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/home/studioai/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/home/studioai/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/home/studioai/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/home/studioai/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/studioai/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/studioai/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/home/studioai/.m2/repository/org/springframework/data/spring-data-jpa/3.2.0/spring-data-jpa-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/data/spring-data-commons/3.2.0/spring-data-commons-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/spring-orm/6.1.1/spring-orm-6.1.1.jar:/home/studioai/.m2/repository/org/springframework/spring-context/6.1.1/spring-context-6.1.1.jar:/home/studioai/.m2/repository/org/springframework/spring-tx/6.1.1/spring-tx-6.1.1.jar:/home/studioai/.m2/repository/org/springframework/spring-beans/6.1.1/spring-beans-6.1.1.jar:/home/studioai/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/studioai/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/home/studioai/.m2/repository/org/springframework/spring-aspects/6.1.1/spring-aspects-6.1.1.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.0/spring-boot-starter-web-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.0/spring-boot-starter-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot/3.2.0/spring-boot-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.0/spring-boot-autoconfigure-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.0/spring-boot-starter-logging-3.2.0.jar:/home/studioai/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/home/studioai/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/home/studioai/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/home/studioai/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/home/studioai/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/home/studioai/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.0/spring-boot-starter-json-3.2.0.jar:/home/studioai/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/home/studioai/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/home/studioai/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/home/studioai/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/home/studioai/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/home/studioai/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.0/spring-boot-starter-tomcat-3.2.0.jar:/home/studioai/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar:/home/studioai/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.16/tomcat-embed-el-10.1.16.jar:/home/studioai/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.16/tomcat-embed-websocket-10.1.16.jar:/home/studioai/.m2/repository/org/springframework/spring-web/6.1.1/spring-web-6.1.1.jar:/home/studioai/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/home/studioai/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/home/studioai/.m2/repository/org/springframework/spring-webmvc/6.1.1/spring-webmvc-6.1.1.jar:/home/studioai/.m2/repository/org/springframework/spring-expression/6.1.1/spring-expression-6.1.1.jar:/home/studioai/.m2/repository/com/mysql/mysql-connector-j/8.2.0/mysql-connector-j-8.2.0.jar:/home/studioai/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.0/spring-boot-starter-test-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-test/3.2.0/spring-boot-test-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.0/spring-boot-test-autoconfigure-3.2.0.jar:/home/studioai/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/home/studioai/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/home/studioai/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/studioai/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/home/studioai/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/home/studioai/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/studioai/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/studioai/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/studioai/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/studioai/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/home/studioai/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/home/studioai/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/studioai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/studioai/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar:/home/studioai/.m2/repository/org/springframework/spring-jcl/6.1.1/spring-jcl-6.1.1.jar:/home/studioai/.m2/repository/org/springframework/spring-test/6.1.1/spring-test-6.1.1.jar:/home/studioai/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/home/studioai/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar:/home/studioai/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/studioai/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/home/studioai/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/studioai/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar:/home/studioai/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/home/studioai/.m2/repository/org/mockito/mockito-core/5.3.1/mockito-core-5.3.1.jar:/home/studioai/.m2/repository/net/bytebuddy/byte-buddy/1.14.10/byte-buddy-1.14.10.jar:/home/studioai/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar:/home/studioai/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/studioai/.m2/repository/org/mockito/mockito-junit-jupiter/5.3.1/mockito-junit-jupiter-5.3.1.jar:/home/studioai/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="catalina.useNaming" value="false"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/modernize-data/studio-data/TNT1001/APP3332/transformed-code/1048/studio-workspace/spring-boot-crud/target/surefire/surefirebooter-20260129113717526_3.jar /modernize-data/studio-data/TNT1001/APP3332/transformed-code/1048/studio-workspace/spring-boot-crud/target/surefire 2026-01-29T11-37-17_448-jvmRun1 surefire-20260129113717526_1tmp surefire_0-20260129113717526_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/modernize-data/studio-data/TNT1001/APP3332/transformed-code/1048/studio-workspace/spring-boot-crud/target/test-classes:/modernize-data/studio-data/TNT1001/APP3332/transformed-code/1048/studio-workspace/spring-boot-crud/target/classes:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.0/spring-boot-starter-data-jpa-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.0/spring-boot-starter-aop-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/spring-aop/6.1.1/spring-aop-6.1.1.jar:/home/studioai/.m2/repository/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.0/spring-boot-starter-jdbc-3.2.0.jar:/home/studioai/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/studioai/.m2/repository/org/springframework/spring-jdbc/6.1.1/spring-jdbc-6.1.1.jar:/home/studioai/.m2/repository/org/hibernate/orm/hibernate-core/6.3.1.Final/hibernate-core-6.3.1.Final.jar:/home/studioai/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/studioai/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/studioai/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/studioai/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/studioai/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/home/studioai/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/home/studioai/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/home/studioai/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/home/studioai/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/home/studioai/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/home/studioai/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/studioai/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/studioai/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/home/studioai/.m2/repository/org/springframework/data/spring-data-jpa/3.2.0/spring-data-jpa-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/data/spring-data-commons/3.2.0/spring-data-commons-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/spring-orm/6.1.1/spring-orm-6.1.1.jar:/home/studioai/.m2/repository/org/springframework/spring-context/6.1.1/spring-context-6.1.1.jar:/home/studioai/.m2/repository/org/springframework/spring-tx/6.1.1/spring-tx-6.1.1.jar:/home/studioai/.m2/repository/org/springframework/spring-beans/6.1.1/spring-beans-6.1.1.jar:/home/studioai/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/studioai/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/home/studioai/.m2/repository/org/springframework/spring-aspects/6.1.1/spring-aspects-6.1.1.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.0/spring-boot-starter-web-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.0/spring-boot-starter-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot/3.2.0/spring-boot-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.0/spring-boot-autoconfigure-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.0/spring-boot-starter-logging-3.2.0.jar:/home/studioai/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/home/studioai/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/home/studioai/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/home/studioai/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/home/studioai/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/home/studioai/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.0/spring-boot-starter-json-3.2.0.jar:/home/studioai/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/home/studioai/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/home/studioai/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/home/studioai/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/home/studioai/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/home/studioai/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.0/spring-boot-starter-tomcat-3.2.0.jar:/home/studioai/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar:/home/studioai/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.16/tomcat-embed-el-10.1.16.jar:/home/studioai/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.16/tomcat-embed-websocket-10.1.16.jar:/home/studioai/.m2/repository/org/springframework/spring-web/6.1.1/spring-web-6.1.1.jar:/home/studioai/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/home/studioai/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/home/studioai/.m2/repository/org/springframework/spring-webmvc/6.1.1/spring-webmvc-6.1.1.jar:/home/studioai/.m2/repository/org/springframework/spring-expression/6.1.1/spring-expression-6.1.1.jar:/home/studioai/.m2/repository/com/mysql/mysql-connector-j/8.2.0/mysql-connector-j-8.2.0.jar:/home/studioai/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.0/spring-boot-starter-test-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-test/3.2.0/spring-boot-test-3.2.0.jar:/home/studioai/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.0/spring-boot-test-autoconfigure-3.2.0.jar:/home/studioai/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/home/studioai/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/home/studioai/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/studioai/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/home/studioai/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/home/studioai/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/studioai/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/studioai/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/studioai/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/studioai/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/home/studioai/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/home/studioai/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/studioai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/studioai/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar:/home/studioai/.m2/repository/org/springframework/spring-jcl/6.1.1/spring-jcl-6.1.1.jar:/home/studioai/.m2/repository/org/springframework/spring-test/6.1.1/spring-test-6.1.1.jar:/home/studioai/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/home/studioai/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar:/home/studioai/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/studioai/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/home/studioai/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/studioai/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar:/home/studioai/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/home/studioai/.m2/repository/org/mockito/mockito-core/5.3.1/mockito-core-5.3.1.jar:/home/studioai/.m2/repository/net/bytebuddy/byte-buddy/1.14.10/byte-buddy-1.14.10.jar:/home/studioai/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar:/home/studioai/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/studioai/.m2/repository/org/mockito/mockito-junit-jupiter/5.3.1/mockito-junit-jupiter-5.3.1.jar:/home/studioai/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/studioai"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/modernize-data/studio-data/TNT1001/APP3332/transformed-code/1048/studio-workspace/spring-boot-crud"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/modernize-data/studio-data/TNT1001/APP3332/transformed-code/1048/studio-workspace/spring-boot-crud/target/surefire/surefirebooter-20260129113717526_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.9+10-Ubuntu-124.04"/>
+    <property name="user.name" value="studioai"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.14.0-1018-aws"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="testFailureIgnore" value="true"/>
+    <property name="localRepository" value="/home/studioai/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="com.zaxxer.hikari.pool_number" value="3"/>
+    <property name="catalina.home" value="/tmp/tomcat.8080.13293092022346704392"/>
+    <property name="java.version" value="21.0.9"/>
+    <property name="user.dir" value="/modernize-data/studio-data/TNT1001/APP3332/transformed-code/1048/studio-workspace/spring-boot-crud"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="28151"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="catalina.base" value="/tmp/tomcat.8080.13293092022346704392"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="21.0.9+10-Ubuntu-124.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testUpdateProductPrice" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.109">
+    <system-out><![CDATA[2026-01-29T11:37:30.851Z  INFO 28151 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.javatechie.crud.example.repository.ProductRepositoryTest]: ProductRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-01-29T11:37:30.884Z  INFO 28151 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.javatechie.crud.example.SpringBootCrudExample2Application for test class com.javatechie.crud.example.repository.ProductRepositoryTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-01-29T11:37:30.920Z  INFO 28151 --- [           main] c.j.c.e.r.ProductRepositoryTest          : Starting ProductRepositoryTest using Java 21.0.9 with PID 28151 (started by studioai in /modernize-data/studio-data/TNT1001/APP3332/transformed-code/1048/studio-workspace/spring-boot-crud)
+2026-01-29T11:37:30.921Z  INFO 28151 --- [           main] c.j.c.e.r.ProductRepositoryTest          : The following 1 profile is active: "qa"
+2026-01-29T11:37:31.064Z  INFO 28151 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-29T11:37:31.077Z  INFO 28151 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-01-29T11:37:31.087Z  INFO 28151 --- [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-01-29T11:37:31.117Z  INFO 28151 --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:59238ea3-f88f-4f3b-94e7-720f6110a71b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-01-29T11:37:31.137Z  INFO 28151 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-29T11:37:31.139Z  INFO 28151 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-29T11:37:31.142Z  INFO 28151 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-29T11:37:31.144Z  WARN 28151 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-29T11:37:31.176Z  INFO 28151 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists product_tbl cascade 
+Hibernate: create table product_tbl (id integer generated by default as identity, price float(53) not null, quantity integer not null, name varchar(255), primary key (id))
+2026-01-29T11:37:31.180Z  INFO 28151 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-29T11:37:31.248Z  INFO 28151 --- [           main] c.j.c.e.r.ProductRepositoryTest          : Started ProductRepositoryTest in 0.359 seconds (process running for 13.653)
+Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="testFindByNameNotFound" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.207">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0 where p1_0.name=?
+]]></system-out>
+  </testcase>
+  <testcase name="testSaveProductWithZeroQuantity" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.006">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="testExistsByIdNotFound" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.4">
+    <system-out><![CDATA[Hibernate: select count(*) from product_tbl p1_0 where p1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testFindAll" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.021">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0
+]]></system-out>
+  </testcase>
+  <testcase name="testCount" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.016">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: select count(*) from product_tbl p1_0
+]]></system-out>
+  </testcase>
+  <testcase name="testSaveProductWithNegativePrice" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.008">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="testFindAllWhenEmpty" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.012">
+    <system-out><![CDATA[Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0
+]]></system-out>
+  </testcase>
+  <testcase name="testFindByName" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.014">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0 where p1_0.name=?
+]]></system-out>
+  </testcase>
+  <testcase name="testRepositoryIsNotNull" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.003"/>
+  <testcase name="testUpdateProductName" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.011">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="testCountWhenEmpty" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.009">
+    <system-out><![CDATA[Hibernate: select count(*) from product_tbl p1_0
+]]></system-out>
+  </testcase>
+  <testcase name="testExistsById" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.009">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: select count(*) from product_tbl p1_0 where p1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testSaveProductWithNegativeQuantity" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.005">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="testFindByNameWithEmpty" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.01">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0 where p1_0.name=?
+]]></system-out>
+  </testcase>
+  <testcase name="testSaveProduct" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.005">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="testSaveMultipleProducts" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.006">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateProductQuantity" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.007">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="testSaveAndFlush" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.005">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="testFindById" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.012">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="testFindByIdNotFound" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.006">
+    <system-out><![CDATA[Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0 where p1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateProduct" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.005">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="testFindAllWithSingleProduct" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.006">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0
+]]></system-out>
+  </testcase>
+  <testcase name="testSaveProductWithNullName" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.004">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="testFindByNameWithNull" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.009">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0 where p1_0.name is null
+]]></system-out>
+  </testcase>
+  <testcase name="testFindByNameWithSpecialCharacters" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.007">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0 where p1_0.name=?
+]]></system-out>
+  </testcase>
+  <testcase name="testFindByNameCaseSensitive" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.009">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0 where p1_0.name=?
+Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0 where p1_0.name=?
+Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0 where p1_0.name=?
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteProductNotAffectingOthers" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.01">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="testSaveProductWithEmptyName" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.004">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteAllProducts" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.016">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0
+Hibernate: delete from product_tbl where id=?
+Hibernate: delete from product_tbl where id=?
+Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0
+]]></system-out>
+  </testcase>
+  <testcase name="testFindByIdWithNegative" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.004">
+    <system-out><![CDATA[Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0 where p1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteProduct" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.005">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+]]></system-out>
+  </testcase>
+  <testcase name="testFindByNameWhenMultipleProductsExist" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.007">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0 where p1_0.name=?
+]]></system-out>
+  </testcase>
+  <testcase name="testFindByIdWithZero" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.003">
+    <system-out><![CDATA[Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0 where p1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testProductPersistence" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.007">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+Hibernate: select p1_0.id,p1_0.name,p1_0.price,p1_0.quantity from product_tbl p1_0 where p1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testSaveProductWithZeroPrice" classname="com.javatechie.crud.example.repository.ProductRepositoryTest" time="0.005">
+    <system-out><![CDATA[Hibernate: insert into product_tbl (name,price,quantity,id) values (?,?,?,default)
+]]></system-out>
+  </testcase>
+</testsuite>

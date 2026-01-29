@@ -1,0 +1,6 @@
+com/javatechie/crud/example/service/ProductServiceTest.class
+com/javatechie/crud/example/SpringBootCrudExample2ApplicationTest.class
+com/javatechie/crud/example/SpringBootCrudExample2ApplicationTests.class
+com/javatechie/crud/example/controller/ProductControllerTest.class
+com/javatechie/crud/example/entity/ProductTest.class
+com/javatechie/crud/example/repository/ProductRepositoryTest.class
